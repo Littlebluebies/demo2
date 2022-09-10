@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>G-RANK Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Font Family and icon -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<!-- Main CSS by w3.css -->
+<link rel="stylesheet" href="w3.css">
+<style>
+
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-light-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container w3-center">
+    <br>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img src="images/g-rank.png" class="w3-circle" width="200" height="200">
+    </a>
+  </div>
+  <div class="w3-bar-block">
+    <br>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About us</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Founder</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-light-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-light-grey w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>G-RANK Production</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>G-RANK Production</b></h1>
+    <h1 class="w3-xxxlarge text-grey"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid #807886" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-center">
+      <img src="images/group.jpg" class="w3-round" style="width:80%" onclick="onClick(this)" alt="Group of friends.">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/show1.jpg" style="width:100%" onclick="onClick(this)" alt="Monkeys are trying to repair a pc.">
+      <img src="images/show2.jpg" style="width:100%" onclick="onClick(this)" alt="Monkeys are listening to human.">
+    </div>
+    <div class="w3-half">
+      <img src="images/show3.jpg" style="width:100%" onclick="onClick(this)" alt="Monkey is trying to talk to robot.">
+      <img src="images/show4.jpg" style="width:100%" onclick="onClick(this)" alt="Monkeys are in office in one space.">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About us -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-grey"><b>About us.</b></h1>
+    <hr style="width:50px;border:5px solid #807886" class="w3-round">
+    <p>ด้วยการร่วมตัวกันของสมาชิกภายผู้ตั้งก่อตั้งบริษัทของเราเลยทำให้เราได้สามารถทำงานร่วมกับคุณได้หากคุณต้องการงานที่ยอดเยี่ยมสำหรับคุณ!</p>
+    <p>พวกเราคือกลุ่มของเพื่อนๆที่ร่วมก่อตั้งกันทำบริษัทที่เกี่ยวกับการ มัลติมีเดีย, การพัฒนาเว็บไซต์, การกับภาพยนตร์ และ การพัฒนาโปรแกรม
+      ด้วยความร่วมมือของจากกลุ่มเพื่อนหลายๆที่ร่วมมือกันทำเลยทำให้งานบริษัทของเราทำงานได้ในหลายๆด้านและสำเร็จได้ด้วยผ่านจากประสบการณ์การทำงานร่วมด้วย 5 ปี
+    </p>
+  </div>
+  
+  <!-- Founder -->
+  <div class="w3-container" id="Founder" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-grey"><b>Founder.</b></h1>
+    <hr style="width:50px;border:5px solid #807886" class="w3-round">
+    <p>ผู้ก่อตั้งริเริ่มบริษัท G-RANK</p>
+    <p><b>โดยมีคนก่อตั้งไปด้วย 4 คนด้วยกัน</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/gee.jpg" alt="Gee" style="width:100%">
+        <div class="w3-container">
+          <h3>Rachata Sowpharsuk</h3>
+          <p class="w3-opacity">CEO & Director</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/rut.jpg" alt="Rut" style="width:100%">
+        <div class="w3-container">
+          <h3>Rut Watcharapadit</h3>
+          <p class="w3-opacity">CO-Founder & Editor</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/cho.jpg" alt="Cho" style="width:100%">
+        <div class="w3-container">
+          <h3>Sirapad Limsirisumpun</h3>
+          <p class="w3-opacity">CO-Founder & Photographer</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/blue.jpg" alt="Cho" style="width:100%">
+        <div class="w3-container">
+          <h3>Thanakorn Pengklin</h3>
+          <p class="w3-opacity">Full Stack Development & Database Analysis</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/three.jpg" alt="Blue" style="width:100%">
+        <div class="w3-container">
+          <h3>Tadthep Bunkent</h3>
+          <p class="w3-opacity">Producer</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/aof.jpg" alt="Aof" style="width:100%">
+        <div class="w3-container">
+          <h3>Patchanon Taratsorn</h3>
+          <p class="w3-opacity">3D Designer & Artist</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge text-grey"><b>Contact us.</b></h1>
+    <hr style="width:50px;border:5px solid #807886" class="w3-round">
+    <p>ต้องการที่จะให้พวกเราช่วยงานของคุณรึป่าว? กรอกข้อมูลตามข้างล่างที่เรากำหนด พวกเรายินดีที่จะได้ร่วมงานกับคุณ!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-grey w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.facebook.com/autopaiboon" title="AJ'Paiboon" target="_blank" class="w3-hover-opacity">AJ'Paiboon</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
